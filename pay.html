@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    <title>طرق المساهمة</title>
+
+</head>
+
+<body>
+
+    <div class="Logo">
+        <a href="index.html"><img src="imges/شعار_ثلاثون_عاماً_-removebg-preview.png">
+        </a>
+        <ul class="nav-links">
+            <li><a href="ach.html">الأنجازات</a></li>
+            <li><a href="done.html">مشاريع تمت بعطائكم </a></li>
+            <li><a href="will.html">مشاريعنا المستقبلية</a></li>
+            <li><a href="pay.html">طرق المساهمة</a></li>
+            <li><a href="account.html">حسابنا</a></li>
+
+        </ul>
+        <a href="https://www.hoffaz.org/ar/home/"> <img src="imges/شعار الجمعية مفرغ (1).png">
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- أيقونة الهامبرغر -->
+    </div>
+    <div class="con">
+        <p id="title">طرق المساهمة</p>
+        <div class="pay1">
+            <p id="ti1">مشروع الكفالات</p>
+            <br>
+            <div class="methodes2">
+                <p>1 - كفالة طالب : 10 دنانير شهريا </p>
+                <p>2 - كفالة معلم : 25 دينار شهريا</p>
+                <p>3 - كفالة حلقة : 50 دينار شهريا </p>
+                <p>4 - كفالة حافظ : 300 دينار سنويا</p>
+            </div>
+        </div>
+
+
+        <div class="pay2">
+            <p id="ti">السهم الشهري (الاقتطاع الشهري)</p>
+            <br>
+            <div class="methodes1">
+                <p>1 - السهم البرونزي : 1 دينار شهريا </p>
+                <p>2 - السهم الفضي : 5 دنانير شهريا</p>
+                <p>3 - السهم الذهبي : 10 دنانير شهريا</p>
+                <p>4 - السهم الماسي : 20 دينار شهريا </p>
+            </div>
+        </div>
+
+        <p id="next">تواصل مع مندوبنا :</p>
+        <div class="con1">
+            <div class="test1">
+                <a href="tel:+962788332738">رقم المندوب الاول</a>
+                <a href="https://wa.me/962788332738">واتساب المندوب الاول</a>
+                <a href="tel:+962797958541">رقم المندوب الثاني</a>
+                <a href="https://wa.me/962797958541">واتساب المندوب الثاني</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+
+            // إذا كانت الشاشة أكبر من 768px، أغلق القائمة
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+                navLinks.classList.remove('show');  // إزالة الكلاس المتعلق بالعرض
+            } else {
+                // إذا كانت الشاشة أصغر من أو تساوي 768px، إخفاء القائمة
+                navLinks.style.display = 'none';
+            }
+        });
+
+
+    </script>
+    </div>
+
+    <script>
+        function toggleMenu(event) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
+
+            // إغلاق القائمة عند الضغط في أي مكان آخر
+            if (navLinks.style.display === 'flex') {
+                document.addEventListener('click', closeMenuOutsideClick);
+            } else {
+                document.removeEventListener('click', closeMenuOutsideClick);
+            }
+
+            function closeMenuOutsideClick(e) {
+                if (!navLinks.contains(e.target) && e.target !== document.querySelector('.hamburger')) {
+                    navLinks.style.display = 'none';
+                    document.removeEventListener('click', closeMenuOutsideClick);
+                }
+            }
+        }
+
+        function toggleMenu(event) {
+            const navLinks = document.querySelector('.nav-links');
+
+            // إذا كانت القائمة مخفية، أظهرها باستخدام تأثير الانتقال
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                setTimeout(() => navLinks.classList.add('show'), 10);  // إضافة الكلاس بعد وقت صغير لتفعيل تأثير الانتقال
+            } else {
+                // إذا كانت القائمة ظاهرة، قم بإخفائها مع تأثير الانتقال
+                navLinks.classList.remove('show');
+                setTimeout(() => navLinks.style.display = 'none', 300);  // إخفاء القائمة بعد الانتهاء من التأثير
+            }
+
+            // إغلاق القائمة عند الضغط في أي مكان آخر
+            if (navLinks.style.display === 'flex') {
+                document.addEventListener('click', closeMenuOutsideClick);
+            } else {
+                document.removeEventListener('click', closeMenuOutsideClick);
+            }
+
+            function closeMenuOutsideClick(e) {
+                if (!navLinks.contains(e.target) && e.target !== document.querySelector('.hamburger')) {
+                    navLinks.classList.remove('show');
+                    setTimeout(() => navLinks.style.display = 'none', 300);
+                    document.removeEventListener('click', closeMenuOutsideClick);
+                }
+            }
+        }
+        function toggleMenu(event) {
+            const navLinks = document.querySelector('.nav-links');
+
+            // إذا كانت القائمة مخفية، أظهرها باستخدام تأثير الانتقال
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                setTimeout(() => navLinks.classList.add('show'), 10);  // إضافة الكلاس بعد وقت صغير لتفعيل تأثير الانتقال
+            } else {
+                // إذا كانت القائمة ظاهرة، قم بإخفائها مع تأثير الانتقال
+                navLinks.classList.remove('show');
+                setTimeout(() => navLinks.style.display = 'none', 300);  // إخفاء القائمة بعد الانتهاء من التأثير
+            }
+
+            // إغلاق القائمة عند الضغط في أي مكان آخر
+            if (navLinks.style.display === 'flex') {
+                document.addEventListener('click', closeMenuOutsideClick);
+            } else {
+                document.removeEventListener('click', closeMenuOutsideClick);
+            }
+
+            function closeMenuOutsideClick(e) {
+                if (!navLinks.contains(e.target) && e.target !== document.querySelector('.hamburger')) {
+                    navLinks.classList.remove('show');
+                    setTimeout(() => navLinks.style.display = 'none', 300);
+                    document.removeEventListener('click', closeMenuOutsideClick);
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

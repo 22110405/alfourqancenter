@@ -1,0 +1,446 @@
+/* استيراد خط جوجل */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* ضبط التنسيق العام */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+    background-color: #f8f9fa;
+    width: 98.7%;
+    height: 110vh;
+    background-image: url('imges/WhatsApp\ Image\ 2025-02-21\ at\ 21.02.39_5b4ec0ca.jpg');
+    /* Replace with your image path */
+}
+
+
+
+/* تنسيق الشعار والتنقل */
+.Logo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #317873;
+    position: sticky;
+    top: 0;
+
+}
+
+.Logo img {
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 6px;
+
+}
+
+.Logo ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.Logo ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 300px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo ul li {
+    width: 200px;
+    align-items: center;
+    display: flex;
+}
+
+
+.Logo ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    /* تحسين الانتقال */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+}
+
+.Logo ul li a:hover {
+    color: #317873;
+    /* لون أخضر أنيق عند التحويم */
+    transform: scale(1.05);
+    /* تكبير بسيط عند التحويم */
+    background-color: #f8f8f8;
+    /* لون أفتح عند التحويم */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* تعزيز الظل */
+}
+
+
+.Logo a img:hover {
+    transform: scale(1.1);
+    /* تكبير خفيف */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* إضافة ظل */
+}
+
+.Logo a img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Logo a img:hover {
+    transform: scale(1.08);
+    /* تكبير خفيف */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    /* ظل ناعم وجذاب */
+}
+
+
+
+/* إخفاء الروابط في الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .Logo ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 154px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        padding: 10px;
+        z-index: 999;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .Logo ul.show {
+        transform: translateY(0);
+    }
+
+    .Logo .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* إخفاء زر الهامبرغر في الشاشات الكبيرة */
+.hamburger {
+    display: none;
+}
+
+
+/* تنسيق ناف بار للمقاسات الكبيرة */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+
+    /* تعديل الناف بار عندما يكون عرض الشاشة 1000px أو أقل */
+    .nav-links {
+        flex-direction: column;
+        /* تغيير إلى عمودي */
+        background-color: rgba(0, 0, 0, 0.7);
+        /* تغيير اللون الخلفي */
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        /* يبدأ مخفيًا */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.show {
+        transform: translateY(0);
+        /* عند الضغط على الهامبرغر يظهر */
+    }
+
+    /* جعل زر الهامبرغر ظاهر */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+}
+
+/* تنسيق زر الهامبرغر (الهامبرغر غير ظاهر في الشاشات الكبيرة) */
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #317873;
+    height: auto;
+    margin-top: 3%;
+    margin-right: 2%;
+    gap: 9%;
+    border-radius: 50px;
+}
+
+.pay1 {
+    background-color: white;
+    width: 40%;
+    height: 400px;
+    margin-right: 5%;
+    border-radius: 50px;
+}
+
+.pay2 {
+    background-color: white;
+    width: 40%;
+    height: 400px;
+    margin-bottom: 5%;
+    border-radius: 50px;
+
+}
+
+#title {
+    height: auto;
+    width: 100%;
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    padding-right: 0%;
+}
+
+
+.methodes1 p {
+    height: 100%;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    padding-right: 10%;
+    color: #317873;
+    font-size: 23px;
+    font-weight: 900;
+
+}
+
+#ti {
+    font-size: 23px;
+    font-weight: 900;
+    color: #317873;
+}
+
+
+.methodes2 p {
+    height: 100%;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    padding-right: 10%;
+    color: #317873;
+    font-size: 23px;
+    font-weight: 900;
+
+}
+
+
+#ti1 {
+    font-size: 23px;
+    font-weight: 900;
+    color: #317873;
+}
+
+#next {
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    margin-right: 10%;
+
+}
+
+.con1 .test1 a {
+    text-decoration: none;
+    color: black;
+    /* لون النص الافتراضي */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* تأثير التغيير عند التحويم */
+}
+
+.con1 .test1 a:hover {
+    color: #317873;
+    /* اللون عند التمرير فوق الرابط */
+    transform: scale(1.1);
+    /* تكبير العنصر قليلاً */
+}
+
+/* تأثير خاص للأيقونات */
+#icon1:hover,
+#icon2:hover {
+    color: green;
+    /* تغيير لون الأيقونة */
+    transform: rotate(15deg);
+    /* تدوير الأيقونة قليلاً */
+}
+
+
+.con1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.test1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 2%;
+    width: 96%;
+    height: 200px;
+}
+
+
+
+.test1 a {
+    display: flex;
+    margin-top: 3%;
+    background-color: white;
+    width: 20%;
+    height: 50%;
+    border-radius: 70px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* التأكد من ترتيب البطاقات في الخلف */
+.pay1,
+.pay2 {
+    position: relative;
+    /* إضافة هذا لتحديد مكان البطاقة بالنسبة لبقية العناصر */
+    z-index: 1;
+    /* تحديد البطاقات في المستوى الأدنى */
+}
+
+/* عندما يتم تحويم البطاقة */
+.pay1:hover,
+.pay2:hover {
+    transform: scale(1.05);
+    /* تحجيم البطاقة عند التحويم */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    /* رفع البطاقة أثناء التحويم */
+}
+
+/* لضبط ترتيب عناصر النصوص أو الروابط */
+.methodes1,
+.methodes2,
+.test1,
+.nav-links,
+.Logo {
+    position: relative;
+    z-index: 3;
+    /* تحديد مستوى أعلى لهذه العناصر ليكونوا فوق البطاقات */
+}
+
+
+.pay1:hover,
+.pay2:hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* انتقال سلس */
+    transform: scale(1.08);
+    /* تكبير بسيط عند التحويم */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* ظل لخلق تأثير الارتفاع */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .con {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .pay1 {
+        width: 90%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .pay2 {
+        width: 90%;
+        margin-right: 5%;
+        height: auto;
+    }
+
+    .con1 {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .test1 a {
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+}

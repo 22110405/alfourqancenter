@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الأنجازات</title>
+    <link rel="stylesheet" href="ach.css">
+
+</head>
+
+<body>
+    <div class="Logo">
+        <a href="index.html"><img src="imges/شعار_ثلاثون_عاماً_-removebg-preview.png">
+        </a>
+        <ul class="nav-links">
+            <li><a href="ach.html">الأنجازات</a></li>
+            <li><a href="done.html">مشاريع تمت بعطائكم </a></li>
+            <li><a href="will.html">مشاريعنا المستقبلية</a></li>
+            <li><a href="pay.html">طرق المساهمة</a></li>
+            <li><a href="account.html">حسابنا</a></li>
+        </ul>
+        <a href="https://www.hoffaz.org/ar/home/"> <img src="imges/شعار الجمعية مفرغ (1).png">
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- أيقونة الهامبرغر -->
+
+    </div>
+
+
+    <div class="con">
+        <div class="first">
+            <p>حفاظ القران الكريم</p>
+            <div id="counter">0</div>
+        </div>
+
+        <div class="first">
+            <p>المجازون بالسند الغيبي</p>
+            <div id="counter1">0</div>
+        </div>
+
+        <div class="first">
+            <p>ملتقى خارجي</p>
+            <div id="counter2">0</div>
+        </div>
+
+        <div class="first">
+            <p>ملتقى داخلي</p>
+            <div id="counter3">0</div>
+        </div>
+
+
+        <div class="first">
+            <p>نادي صيفي</p>
+            <div id="counter4">0</div>
+        </div>
+
+        <div class="first">
+            <p>تخريج مجازين بالقراءات العشرة</p>
+            <div id="counter5">0</div>
+        </div>
+
+        <div class="first">
+            <p>طالب خرجهم المركز</p>
+            <div id="counter6">0</div>
+        </div>
+
+        <div class="first">
+            <p>محاضرات و دورات و ورشات تربوية</p>
+            <div id="counter7">0</div>
+        </div>
+
+
+        <div class="first" id="test1">
+            <p>العمرات للديار المقدسة</p>
+            <div id="counter8">0</div>
+        </div>
+
+        <div class="first">
+            <p>دورات التلاوة و التجويد</p>
+            <div id="counter9">0</div>
+        </div>
+
+        <div class="first" id="test">
+            <p>الدورات الدائمة</p>
+            <div id="counter10">0</div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter");
+            let count = 0;
+            let target = 50;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 70); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter1");
+            let count = 0;
+            let target = 40;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 70); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter2");
+            let count = 0;
+            let target = 25;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 70); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter3");
+            let count = 0;
+            let target = 35;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 70); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter4");
+            let count = 0;
+            let target = 34;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 70); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter5");
+            let count = 0;
+            let target = 3;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 70); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter6");
+            let count = 3000;
+            let target = 4000;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 0); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter7");
+            let count = 0;
+            let target = 150;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 20); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter8");
+            let count = 0;
+            let target = 16;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 50); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        }); document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter9");
+            let count = 0;
+            let target = 70;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 20); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        }); document.addEventListener("DOMContentLoaded", function () {
+            let counterElement = document.getElementById("counter10");
+            let count = 0;
+            let target = 78;
+
+            function increaseNumber() {
+                if (count < target) {
+                    count++;
+                    counterElement.textContent = count;
+                    setTimeout(increaseNumber, 20); // يزيد الرقم كل 50 مللي ثانية
+                }
+            }
+
+            increaseNumber();
+        });
+
+
+        function toggleMenu(event) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
+
+            // إغلاق القائمة عند الضغط في أي مكان آخر
+            if (navLinks.style.display === 'flex') {
+                document.addEventListener('click', closeMenuOutsideClick);
+            } else {
+                document.removeEventListener('click', closeMenuOutsideClick);
+            }
+
+            function closeMenuOutsideClick(e) {
+                if (!navLinks.contains(e.target) && e.target !== document.querySelector('.hamburger')) {
+                    navLinks.style.display = 'none';
+                    document.removeEventListener('click', closeMenuOutsideClick);
+                }
+            }
+        }
+
+        function toggleMenu(event) {
+            const navLinks = document.querySelector('.nav-links');
+
+            // إذا كانت القائمة مخفية، أظهرها باستخدام تأثير الانتقال
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                setTimeout(() => navLinks.classList.add('show'), 10);  // إضافة الكلاس بعد وقت صغير لتفعيل تأثير الانتقال
+            } else {
+                // إذا كانت القائمة ظاهرة، قم بإخفائها مع تأثير الانتقال
+                navLinks.classList.remove('show');
+                setTimeout(() => navLinks.style.display = 'none', 300);  // إخفاء القائمة بعد الانتهاء من التأثير
+            }
+
+            // إغلاق القائمة عند الضغط في أي مكان آخر
+            if (navLinks.style.display === 'flex') {
+                document.addEventListener('click', closeMenuOutsideClick);
+            } else {
+                document.removeEventListener('click', closeMenuOutsideClick);
+            }
+
+            function closeMenuOutsideClick(e) {
+                if (!navLinks.contains(e.target) && e.target !== document.querySelector('.hamburger')) {
+                    navLinks.classList.remove('show');
+                    setTimeout(() => navLinks.style.display = 'none', 300);
+                    document.removeEventListener('click', closeMenuOutsideClick);
+                }
+            }
+        }
+        function toggleMenu(event) {
+            const navLinks = document.querySelector('.nav-links');
+
+            // إذا كانت القائمة مخفية، أظهرها باستخدام تأثير الانتقال
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                setTimeout(() => navLinks.classList.add('show'), 10);  // إضافة الكلاس بعد وقت صغير لتفعيل تأثير الانتقال
+            } else {
+                // إذا كانت القائمة ظاهرة، قم بإخفائها مع تأثير الانتقال
+                navLinks.classList.remove('show');
+                setTimeout(() => navLinks.style.display = 'none', 300);  // إخفاء القائمة بعد الانتهاء من التأثير
+            }
+
+            // إغلاق القائمة عند الضغط في أي مكان آخر
+            if (navLinks.style.display === 'flex') {
+                document.addEventListener('click', closeMenuOutsideClick);
+            } else {
+                document.removeEventListener('click', closeMenuOutsideClick);
+            }
+
+            function closeMenuOutsideClick(e) {
+                if (!navLinks.contains(e.target) && e.target !== document.querySelector('.hamburger')) {
+                    navLinks.classList.remove('show');
+                    setTimeout(() => navLinks.style.display = 'none', 300);
+                    document.removeEventListener('click', closeMenuOutsideClick);
+                }
+            }
+        }
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+
+            // إذا كانت الشاشة أكبر من 768px، أغلق القائمة
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+                navLinks.classList.remove('show');  // إزالة الكلاس المتعلق بالعرض
+            } else {
+                // إذا كانت الشاشة أصغر من أو تساوي 768px، إخفاء القائمة
+                navLinks.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

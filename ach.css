@@ -1,0 +1,310 @@
+/* استيراد خط جوجل */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* ضبط التنسيق العام */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+    background-color: #f8f9fa;
+    width: 98.7%;
+    height: 110vh;
+    background-image: url('imges/WhatsApp\ Image\ 2025-02-21\ at\ 21.02.39_5b4ec0ca.jpg');
+    /* Replace with your image path */
+}
+
+
+
+/* تنسيق الشعار والتنقل */
+.Logo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #317873;
+    position: sticky;
+    top: 0;
+
+}
+
+.Logo img {
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 6px;
+
+}
+
+.Logo ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.Logo ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 300px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo ul li {
+    width: 200px;
+    align-items: center;
+    display: flex;
+}
+
+
+.Logo ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    /* تحسين الانتقال */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+}
+
+.Logo ul li a:hover {
+    color: #317873;
+    /* لون أخضر أنيق عند التحويم */
+    transform: scale(1.05);
+    /* تكبير بسيط عند التحويم */
+    background-color: #f8f8f8;
+    /* لون أفتح عند التحويم */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* تعزيز الظل */
+}
+
+
+.Logo a img:hover {
+    transform: scale(1.1);
+    /* تكبير خفيف */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* إضافة ظل */
+}
+
+.Logo a img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Logo a img:hover {
+    transform: scale(1.08);
+    /* تكبير خفيف */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    /* ظل ناعم وجذاب */
+}
+
+
+
+/* إخفاء الروابط في الشاشات الصغيرة */
+@media (max-width: 768px) {
+
+    .Logo ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 154px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        padding: 10px;
+        z-index: 999;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .Logo ul.show {
+        transform: translateY(0);
+    }
+
+    .Logo .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* إخفاء زر الهامبرغر في الشاشات الكبيرة */
+.hamburger {
+    display: none;
+}
+
+
+
+
+
+.con {
+    margin-top: 8%;
+    background-color: #317873;
+    width: 90%;
+    height: auto;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px;
+    /* زوايا مستديرة */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* ظل ناعم */
+}
+
+
+.con:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    /* زيادة الظل عند التحويم */
+    transform: scale(1.02);
+    /* تكبير طفيف لإبراز العنصر */
+    transition: all 0.3s ease-in-out;
+}
+
+.first {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 260px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.first div {
+    margin-top: 7%;
+    margin-left: 10%;
+    background-color: #317873;
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    color: white;
+    font-weight: 900;
+    font-size: large;
+    padding-top: 5%;
+}
+
+.first p {
+    margin-right: 9%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#test {
+    margin-left: 7%;
+}
+
+#test1 {
+    margin-right: 6%;
+}
+
+.first {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.first:hover {
+    transform: scale(1.05);
+    /* تكبير خفيف عند التحويم */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* إضافة ظل ناعم */
+}
+
+.first div {
+    transition: transform 0.3s ease-in-out;
+}
+
+.first div:hover {
+    transform: scale(1.1);
+    /* تكبير العداد عند التحويم */
+}
+
+@media (max-width: 768px) {
+    .con {
+        width: 90% !important;
+    }
+
+    .first {
+        width: 350px;
+    }
+
+    .first div {
+        margin-top: 10px;
+    }
+
+}
+
+
+/* تنسيق ناف بار للمقاسات الكبيرة */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+
+    /* تعديل الناف بار عندما يكون عرض الشاشة 1000px أو أقل */
+    .nav-links {
+        flex-direction: column;
+        /* تغيير إلى عمودي */
+        background-color: rgba(0, 0, 0, 0.7);
+        /* تغيير اللون الخلفي */
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        /* يبدأ مخفيًا */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.show {
+        transform: translateY(0);
+        /* عند الضغط على الهامبرغر يظهر */
+    }
+
+    /* جعل زر الهامبرغر ظاهر */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+}
+
+/* تنسيق زر الهامبرغر (الهامبرغر غير ظاهر في الشاشات الكبيرة) */
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .hamburger {
+        display: block;
+    }
+}
